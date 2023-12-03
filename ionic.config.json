@@ -1,0 +1,7 @@
+{
+  "name": "papermatterweb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
