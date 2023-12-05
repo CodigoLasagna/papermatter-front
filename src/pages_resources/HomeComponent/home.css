@@ -1,0 +1,47 @@
+.texto
+{
+	position: absolute;
+	top: 10%; /* Ajusta la posición vertical del texto */
+	left: 50%; /* Ajusta la posición horizontal del texto */
+	transform: translate(-10%, -50%); /* Centra el texto en relación al 50% del contenedor */
+	color: white; /* Color del texto */
+	font-size: 24px; /* Tamaño de fuente */
+	text-align: right; /* Ajusta la alineación del texto según sea necesario */
+}
+.main_content
+{
+	--background: linear-gradient(to right, rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.7), rgba(31, 31, 31, 1));
+	background: url('https://w.wallhaven.cc/full/4v/wallhaven-4v2r83.jpg') 0 0 / 100% no-repeat;
+	background-size: cover;
+}
+
+.image_card
+{
+	width: 90%;
+	height: 200px;
+	object-fit: contain;
+	margin: 2px;
+}
+
+.carousel
+{
+	background: rgba(0.5, 0.5, 0.5, 0.5);
+	border-radius: 10px;
+	width: 90%;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.card
+{
+	transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover
+{
+	transform: translateY(-10px);
+	background: #323438;
+	cursor: pointer;
+}

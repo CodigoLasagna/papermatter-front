@@ -1,0 +1,10 @@
+.cart-list {
+	padding: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+	height: calc(100vh - 450px); /* Ajusta según tus necesidades */
+	overflow-y: auto;
+}
+.checkout-button {
+	position: fixed;
+	left: 15px;
+}
