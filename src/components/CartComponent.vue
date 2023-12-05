@@ -1,6 +1,6 @@
 <template>
 	<ion-page>
-		<ion-content>
+		<ion-content class="main_content">
 			<ion-item>
 				<ion-label>Objetos en el carrito</ion-label>
 			</ion-item>

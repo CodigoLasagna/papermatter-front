@@ -15,10 +15,10 @@
 			<ion-button @click="main_view = 3" slot="end" v-if="!logged_in" color="button">
 				iniciar sesión
 			</ion-button>
-			<ion-button slot="end" v-if="logged_in" color="button">
+			<ion-button @click="main_view = 6" slot="end" v-if="logged_in" color="button">
 				perfil: {{username}}
 			</ion-button>
-			<ion-button slot="end" v-if="logged_in" color="button">
+			<ion-button @click="main_view = 5" slot="end" v-if="logged_in" color="button">
 				pedidos
 			</ion-button>
 			<ion-button @click="main_view = 4" slot="end" v-if="logged_in" color="button">
@@ -29,7 +29,9 @@
 			<HomeComponent v-if="main_view===1"/>
 			<ProductsComponent v-if="main_view===2" @increase_counter="items_in_cart += 1" @move_to_login="main_view = 3" :IsLogged="logged_in"/>
 			<LoginComponent @logged="logged_in = true; main_view = 1; username = $event" v-if="main_view===3"/>
-			<CartComponent v-if="main_view == 4" :cart_counter="items_in_cart" @remove_from_cart="items_in_cart -= 1" @clean_cart="items_in_cart = 0"/>
+			<CartComponent v-if="main_view == 4" :cart_counter="items_in_cart" @remove_from_cart="items_in_cart -= 1" @clean_cart="items_in_cart = 0" @increase_orders="orders +=1"/>
+			<OrdersComponent v-if="main_view == 5" :orders="orders"/>
+			<ProfileComponent v-if="main_view == 6" :username="username"/>
 		</ion-content>
 		<ion-footer>
 			papermatter 2024©;

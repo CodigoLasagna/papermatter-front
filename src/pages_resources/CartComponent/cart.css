@@ -8,3 +8,9 @@
 	position: fixed;
 	left: 15px;
 }
+.main_content
+{
+	--background: rgba(32, 32, 32, 0.9);
+	background: url('https://previews.123rf.com/images/volody10/volody101903/volody10190300166/118899524-black-and-white-repeating-torn-newspaper-background-continuous-pattern-left-right-up-and-down.jpg') 0 0 / 100% no-repeat;
+	background-size: cover;
+}

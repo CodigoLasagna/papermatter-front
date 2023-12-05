@@ -31,6 +31,7 @@ export default {
 		checkout()
 		{
 			this.$emit('clean_cart')
+			this.$emit('increase_orders')
 			this.message = "Compra realizada"
 		}
 	},

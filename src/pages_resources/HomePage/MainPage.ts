@@ -4,6 +4,8 @@ import HomeComponent from "@/components/HomeComponent.vue"
 import ProductsComponent from "@/components/ProductsComponent.vue"
 import LoginComponent from "@/components/LoginComponent.vue"
 import CartComponent from "@/components/CartComponent.vue"
+import OrdersComponent from "@/components/OrdersComponent.vue"
+import ProfileComponent from "@/components/ProfileComponent.vue"
 
 export default {
 	components: {
@@ -19,6 +21,8 @@ export default {
 		ProductsComponent,
 		LoginComponent,
 		CartComponent,
+		OrdersComponent,
+		ProfileComponent,
 	},
 	mounted()
 	{
